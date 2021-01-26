@@ -56,16 +56,11 @@ export default createGlobalStyle`
 	}
 
 	.container {
-		max-width: 1280px;
+		max-width: 1444px;
 		width: 100%;
 		margin: 0 auto;
 	}
 
-	.container2 {
-		max-width: 1680px;
-		width: 100%;
-		margin: 0 auto;
-	}
 
 	h1,
 	h2,
