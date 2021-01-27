@@ -1,8 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
+import { color } from '../shared/styles';
 
 export default createGlobalStyle`
 	@font-face {
-	font-family: 'gelion_regularregular';
+	font-family: 'gelion_regularregular', sans-serif;
 	src: url('gelion-regular-webfont.woff2') format('woff2'),
 		url('gelion-regular-webfont.woff') format('woff');
 	font-weight: normal;
@@ -82,7 +83,10 @@ export default createGlobalStyle`
 	
 	h1 {
 		font-size: 3.25rem;
-		/* line-height: 139%; */
+		line-height: 139%;
+		color: ${color.green};
+		margin-bottom: 29px;
+		text-transform: capitalize;
 	}
 
 	h2 {
@@ -101,6 +105,8 @@ export default createGlobalStyle`
 
 	h5 {
 		font-size: 2rem;
+		color: ${color.red};
+		line-height: 122%;
 	}
 
 	h6 {
@@ -109,12 +115,48 @@ export default createGlobalStyle`
 
 	p {
 		font-size: 1.5rem;
-		line-height: 2px;
+		line-height: 46px;
+		font-family: 'gelion_regularregular', sans-serif;
+	}
+	
+	.p-intro {
+		margin-bottom: 54px;
+		text-transform: capitalize;
 	}
 
 	a {
 		display: inline-block;
 		text-decoration: none;
 		font-size: 1.125rem;
+		font-family: 'gelion_regularregular', sans-serif;
+		font-weight: 400;
+		cursor: pointer;
+	}
+
+	ul {
+		display: flex;
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		list-style-type: none;
+	}
+
+	.list {
+		margin-right: 50px;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+
+	.cta {
+		text-align: center;
+		
+	}
+
+	.nav {
+		margin-right: 40px;
 	}
 `;
