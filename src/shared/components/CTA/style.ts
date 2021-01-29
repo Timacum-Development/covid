@@ -42,4 +42,10 @@ export const LightRed = styled.a`
 	color: ${color.red};
 	text-transform: capitalize;
 	font-weight: 500;
+	transition: 0.25s ease-in-out;
+
+	&:hover {
+		background-color: ${color.red};
+		color: ${color.white};
+	}
 `;
