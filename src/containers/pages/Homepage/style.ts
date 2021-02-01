@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 import { color } from '../../../shared/styles';
 
+// Assets
+import BgGirl from '../../../assets/bg-girl.png';
+
 export const Hero = styled.section`
 	width: 100%;
 	height: 100vh;
@@ -29,9 +32,8 @@ export const About = styled.section`
 `;
 
 export const CoronaImg = styled.img`
-	display: block;
-	width: 771px;
-	height: 722px;
+	width: 40%;
+	height: auto;
 	margin-right: 165px;
 `;
 
@@ -40,9 +42,37 @@ export const AboutWrap = styled.div`
 	padding: 100px 0;
 `;
 
-export const Contagion = styled.section``;
+export const Contagion = styled.section`
+	position: relative;
+	margin-bottom: 148px;
+`;
 
 export const CardWrap = styled.div`
 	display: flex;
 	justify-content: space-between;
+`;
+
+export const Symptoms = styled.section`
+	position: relative;
+	margin-bottom: 117px;
+`;
+
+export const SymptomsWrap = styled.div`
+	position: relative;
+`;
+
+export const GirlBg = styled.div`
+	background: url(${BgGirl}) no-repeat center;
+	width: 100%;
+	/* max-width: 710px; */
+	height: 690px;
+	margin: 0 auto;
+	position: relative;
+`;
+
+export const GirlImg = styled.img`
+	position: absolute;
+	left: 50%;
+	top: 40px;
+	transform: translateX(-50%);
 `;

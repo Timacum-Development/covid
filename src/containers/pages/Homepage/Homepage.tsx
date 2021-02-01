@@ -6,15 +6,26 @@ import {
 	About,
 	CoronaImg,
 	AboutWrap,
-	Contagion
+	Contagion,
+	CardWrap,
+	Symptoms,
+	GirlBg,
+	GirlImg,
+	SymptomsWrap
 } from './style';
 
 // Assets
 import HeroBg from '../../../assets/hero.png';
 import Corona1 from '../../../assets/covid.png';
+import Card1 from '../../../assets/card1.png';
+import Card2 from '../../../assets/card2.png';
+import Card3 from '../../../assets/card3.png';
+import Girl from '../../../assets/girl.png';
 
 // Components
 import CallToAction from '../../../shared/components/CTA';
+import Text from '../../../shared/components/Text';
+import Card from '../../../shared/components/Card';
 
 const Homepage = () => {
 	return (
@@ -46,6 +57,47 @@ const Homepage = () => {
 					<CallToAction text='Learn more' />
 				</AboutWrap>
 			</About>
+			<Contagion>
+				<Text
+					titleFirst='Covid-19'
+					titleSecond='Contagion'
+					text=''
+					styleText={{ maxWidth: '570px' }}
+				/>
+				<CardWrap className='container'>
+					<Card
+						infoIcon={Card1}
+						title='Air Transmission'
+						text='Objectively evolve tactical expertise before extensible initiatives. Efficiently simplify'
+						styleCard={{ padding: '65px 53px 78px' }}
+					/>
+					<Card
+						infoIcon={Card2}
+						title='Human Contacts'
+						text='Washing your hands is one of thesimplest ways you can protect'
+						styleCard={{ padding: '22px 60px 74px' }}
+					/>
+					<Card
+						infoIcon={Card3}
+						title='Containted Objects'
+						text='Use the tissue while sneezing,In this way, you can protect your droplets.'
+						styleCard={{ padding: '58px 50px 75px' }}
+					/>
+				</CardWrap>
+			</Contagion>
+			<Symptoms>
+				<Text
+					titleFirst='Covid-19'
+					titleSecond='Symptoms'
+					text='Corona viruses are a type of virus. There are many different kinds, and some cause disease. A newly identified type has caused a recent outbreak of respiratory '
+					styleText={{ maxWidth: '770px' }}
+				/>
+			</Symptoms>
+			<SymptomsWrap>
+				<GirlBg>
+					<GirlImg src={Girl} />
+				</GirlBg>
+			</SymptomsWrap>
 		</React.Fragment>
 	);
 };

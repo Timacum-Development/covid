@@ -97,13 +97,16 @@ export default createGlobalStyle`
 
 	h3 {
 		font-size: 2.9375rem;
-		font-family: 'gelion_regularregular';
+		font-family: 'gelion_regularregular', sans-serif;
 		font-weight: medium;
 		color: ${color.green};
 	}
 
 	h4 {
 		font-size: 2.25rem;
+		font-family: 'gelion_regularregular', sans-serif;
+		color: ${color.green};
+		margin-bottom: 13px;
 	}
 
 	h5 {
@@ -174,8 +177,18 @@ export default createGlobalStyle`
 	}
 
 	.card-p {
+		font-family: 'gelion_regularregular', sans-serif;
 		font-size: 1.125rem;
 		line-height: 33px;
 		color: ${color.lightBlack};
+		text-transform: capitalize;
+		line-height: 33px;
+		text-align: center;
+	}
+
+	.p-text {
+		text-align: center;
+		text-transform: capitalize;
+		font-size: 1.125rem;
 	}
 `;
