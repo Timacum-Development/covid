@@ -22,7 +22,7 @@ export default createGlobalStyle`
 	html, body, #root {
 		height: 100%;
 		margin: 0;
-		font-family: 'Playfair Display', serif;
+		font-family: 'Red Hat Display',sans-serif;
 		box-sizing: border-box;
 		font-size: 16px;
 	}
@@ -58,6 +58,12 @@ export default createGlobalStyle`
 
 	.container {
 		max-width: 1444px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+	.container2 {
+		max-width: 1920px;
 		width: 100%;
 		margin: 0 auto;
 	}
@@ -100,6 +106,7 @@ export default createGlobalStyle`
 		font-family: 'gelion_regularregular', sans-serif;
 		font-weight: medium;
 		color: ${color.green};
+		text-transform: capitalize;
 	}
 
 	h4 {

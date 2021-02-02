@@ -11,7 +11,8 @@ import {
 	Symptoms,
 	GirlBg,
 	GirlImg,
-	SymptomsWrap
+	SymptomsWrap,
+	WhatToDo
 } from './style';
 
 // Assets
@@ -21,11 +22,16 @@ import Card1 from '../../../assets/card1.png';
 import Card2 from '../../../assets/card2.png';
 import Card3 from '../../../assets/card3.png';
 import Girl from '../../../assets/girl.png';
+import Girl1 from '../../../assets/mask1.png';
+import Girl2 from '../../../assets/mask2.png';
+import Girl3 from '../../../assets/mask3.png';
+import Girl4 from '../../../assets/mask4.png';
 
 // Components
 import CallToAction from '../../../shared/components/CTA';
 import Text from '../../../shared/components/Text';
 import Card from '../../../shared/components/Card';
+import Recommendation from '../../../shared/components/Recommendation';
 
 const Homepage = () => {
 	return (
@@ -92,12 +98,60 @@ const Homepage = () => {
 					text='Corona viruses are a type of virus. There are many different kinds, and some cause disease. A newly identified type has caused a recent outbreak of respiratory '
 					styleText={{ maxWidth: '770px' }}
 				/>
+				<SymptomsWrap>
+					<GirlBg>
+						<GirlImg src={Girl} />
+					</GirlBg>
+				</SymptomsWrap>
 			</Symptoms>
-			<SymptomsWrap>
-				<GirlBg>
-					<GirlImg src={Girl} />
-				</GirlBg>
-			</SymptomsWrap>
+			<WhatToDo className='container2'>
+				<Text
+					titleFirst='Covid-19'
+					titleSecond='What should we do'
+					text='Corona viruses are a type of virus. There are many different kinds, and some cause disease. A newly identified type has caused '
+					styleText={{ maxWidth: '770px' }}
+				/>
+				<Recommendation
+					number='01'
+					title='wear masks'
+					text='Continually seize impactful vortals rather than future-proof supply chains. Uniquely exploit emerging niches via fully tested meta-services. Competently pursue standards compliant leadership skills vis-a-vis pandemic "outside the box" thinking. Objectively '
+					infoIcon={Girl1}
+					styleTxt={{ maxWidth: '647px', marginRight: '150px' }}
+					style={{ margin: '0px 324px 0px 243px' }}
+				/>
+				<Recommendation
+					number='02'
+					title='Wash your hands'
+					text='Continually seize impactful vortals rather than future-proof supply chains. Uniquely exploit emerging niches via fully tested meta-services. Competently pursue standards compliant leadership skills vis-a-vis pandemic "outside the box" thinking. Objectively Continually seize impactful vortals '
+					infoIcon={Girl2}
+					style={{
+						flexDirection: 'row-reverse',
+						margin: '0px 369px 0px 227px'
+					}}
+					styleTxt={{ maxWidth: '611px' }}
+					styleImg={{ marginRight: '148px' }}
+				/>
+				<Recommendation
+					number='03'
+					title='Use nose -  rag'
+					text='Continually seize impactful vortals rather than future-proof supply chains. Uniquely exploit emerging niches via fully tested meta-services. Competently pursue standards compliant leadership skills vis-a-vis pandemic "outside the box" thinking. Objectively '
+					infoIcon={Girl3}
+					styleTxt={{ maxWidth: '652px', marginRight: '216px' }}
+					style={{ margin: '0px 234px 0px 244px' }}
+				/>
+				<Recommendation
+					number='04'
+					title='Avoid contacts'
+					text='Continually seize impactful vortals rather than future-proof supply chains. Uniquely exploit emerging niches via fully tested meta-services. Competently pursue standards compliant leadership skills vis-a-vis pandemic'
+					infoIcon={Girl4}
+					style={{
+						flexDirection: 'row-reverse',
+						margin: '0px 340px 0px 222px'
+					}}
+					styleTxt={{ maxWidth: '645px' }}
+					styleImg={{ marginRight: '56px' }}
+				/>
+			</WhatToDo>
 		</React.Fragment>
 	);
 };

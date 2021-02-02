@@ -54,7 +54,7 @@ export const CardWrap = styled.div`
 
 export const Symptoms = styled.section`
 	position: relative;
-	margin-bottom: 117px;
+	margin-bottom: 217px;
 `;
 
 export const SymptomsWrap = styled.div`
@@ -75,4 +75,8 @@ export const GirlImg = styled.img`
 	left: 50%;
 	top: 40px;
 	transform: translateX(-50%);
+`;
+
+export const WhatToDo = styled.section`
+	position: relative;
 `;
