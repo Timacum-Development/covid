@@ -80,3 +80,10 @@ export const GirlImg = styled.img`
 export const WhatToDo = styled.section`
 	position: relative;
 `;
+
+export const CirclesWrap = styled.div`
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	left: 375px;
+`;

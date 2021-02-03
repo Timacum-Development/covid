@@ -9,7 +9,16 @@ import {
 } from './style';
 
 const Recommendation = (props: any) => {
-	const { title, text, infoIcon, style, number, styleImg, styleTxt } = props;
+	const {
+		title,
+		text,
+		infoIcon,
+		style,
+		number,
+		styleImg,
+		styleTxt,
+		styleTitle
+	} = props;
 	return (
 		<React.Fragment>
 			<InfoWrap style={style}>
@@ -18,7 +27,7 @@ const Recommendation = (props: any) => {
 						<Number>{number}</Number>
 					</Circle>
 					<div>
-						<h3>{title}</h3>
+						<h3 style={styleTitle}>{title}</h3>
 						<InfoParagraph>{text}</InfoParagraph>
 					</div>
 				</InfoText>

@@ -30,7 +30,7 @@ export const Circle = styled.div`
 	border-radius: 50%;
 	background-color: ${color.lightRed};
 	margin-right: 45px;
-	padding: 10px;
+	padding: 15px;
 `;
 
 export const Number = styled.span`

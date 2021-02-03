@@ -12,7 +12,8 @@ import {
 	GirlBg,
 	GirlImg,
 	SymptomsWrap,
-	WhatToDo
+	WhatToDo,
+	CirclesWrap
 } from './style';
 
 // Assets
@@ -32,6 +33,7 @@ import CallToAction from '../../../shared/components/CTA';
 import Text from '../../../shared/components/Text';
 import Card from '../../../shared/components/Card';
 import Recommendation from '../../../shared/components/Recommendation';
+import CircleInfo from '../../../shared/components/Circle';
 
 const Homepage = () => {
 	return (
@@ -99,9 +101,19 @@ const Homepage = () => {
 					styleText={{ maxWidth: '770px' }}
 				/>
 				<SymptomsWrap>
+					<CirclesWrap>
+						<CircleInfo text='Fever' />
+						<CircleInfo text='Throat pain' />
+						<CircleInfo text='Dypsnoea' />
+					</CirclesWrap>
 					<GirlBg>
 						<GirlImg src={Girl} />
 					</GirlBg>
+					<CirclesWrap>
+						<CircleInfo text='Headache' />
+						<CircleInfo text='Runny nose' />
+						<CircleInfo text='Shaking chills' />
+					</CirclesWrap>
 				</SymptomsWrap>
 			</Symptoms>
 			<WhatToDo className='container2'>
@@ -118,6 +130,7 @@ const Homepage = () => {
 					infoIcon={Girl1}
 					styleTxt={{ maxWidth: '647px', marginRight: '150px' }}
 					style={{ margin: '0px 324px 0px 243px' }}
+					styleTitle={{ marginBottom: '20px' }}
 				/>
 				<Recommendation
 					number='02'
@@ -130,6 +143,7 @@ const Homepage = () => {
 					}}
 					styleTxt={{ maxWidth: '611px' }}
 					styleImg={{ marginRight: '148px' }}
+					styleTitle={{ marginBottom: '35px' }}
 				/>
 				<Recommendation
 					number='03'
@@ -138,6 +152,7 @@ const Homepage = () => {
 					infoIcon={Girl3}
 					styleTxt={{ maxWidth: '652px', marginRight: '216px' }}
 					style={{ margin: '0px 234px 0px 244px' }}
+					styleTitle={{ marginBottom: '36px' }}
 				/>
 				<Recommendation
 					number='04'
@@ -150,6 +165,7 @@ const Homepage = () => {
 					}}
 					styleTxt={{ maxWidth: '645px' }}
 					styleImg={{ marginRight: '56px' }}
+					styleTitle={{ marginBottom: '45px' }}
 				/>
 			</WhatToDo>
 		</React.Fragment>
