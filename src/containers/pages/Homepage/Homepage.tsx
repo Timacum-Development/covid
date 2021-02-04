@@ -13,7 +13,10 @@ import {
 	GirlImg,
 	SymptomsWrap,
 	WhatToDo,
-	CirclesWrap
+	CirclesWrapLeft,
+	CirclesWrapRight,
+	MapWrap,
+	MapReport
 } from './style';
 
 // Assets
@@ -101,19 +104,19 @@ const Homepage = () => {
 					styleText={{ maxWidth: '770px' }}
 				/>
 				<SymptomsWrap>
-					<CirclesWrap>
+					<CirclesWrapLeft>
 						<CircleInfo text='Fever' />
 						<CircleInfo text='Throat pain' />
 						<CircleInfo text='Dypsnoea' />
-					</CirclesWrap>
+					</CirclesWrapLeft>
 					<GirlBg>
 						<GirlImg src={Girl} />
 					</GirlBg>
-					<CirclesWrap>
+					<CirclesWrapRight>
 						<CircleInfo text='Headache' />
 						<CircleInfo text='Runny nose' />
 						<CircleInfo text='Shaking chills' />
-					</CirclesWrap>
+					</CirclesWrapRight>
 				</SymptomsWrap>
 			</Symptoms>
 			<WhatToDo className='container2'>
@@ -168,6 +171,9 @@ const Homepage = () => {
 					styleTitle={{ marginBottom: '45px' }}
 				/>
 			</WhatToDo>
+			<MapWrap className='container2'>
+				<MapReport></MapReport>
+			</MapWrap>
 		</React.Fragment>
 	);
 };

@@ -3,6 +3,7 @@ import { color } from '../../../shared/styles';
 
 // Assets
 import BgGirl from '../../../assets/bg-girl.png';
+import Map from '../../../assets/world-map.png';
 
 export const Hero = styled.section`
 	width: 100%;
@@ -81,9 +82,32 @@ export const WhatToDo = styled.section`
 	position: relative;
 `;
 
-export const CirclesWrap = styled.div`
+export const CirclesWrapLeft = styled.div`
 	display: flex;
 	flex-direction: column;
 	position: absolute;
 	left: 375px;
+	top: 0;
+	z-index: 1;
+`;
+
+export const CirclesWrapRight = styled.div`
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	right: 375px;
+	top: 0;
+	z-index: 1;
+`;
+
+export const MapWrap = styled.section``;
+
+export const MapReport = styled.div`
+	margin: 0 195px 0 185px;
+	height: 800px;
+	background: url(${Map}) no-repeat left;
+`;
+
+export const Chart = styled.div`
+	padding: 54px 55px 52px;
 `;

@@ -25,14 +25,14 @@ export const LightCircle = styled.div`
 `;
 
 export const RoundLine = styled.div`
-	width: 220px;
-	height: 220px;
+	width: 200px;
+	height: 200px;
 	border-radius: 50%;
 	border: 3px solid ${color.lightRed};
 	border-right: 10px solid white;
 	border-bottom: 10px solid white;
 	transform: rotate(140deg);
 	position: absolute;
-	left: -50%;
-	top: -40px;
+	right: -25px;
+	bottom: 25px;
 `;

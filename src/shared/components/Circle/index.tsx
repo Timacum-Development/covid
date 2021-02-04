@@ -2,10 +2,10 @@ import React from 'react';
 import { LightCircleWrap, LightCircle, CircleText, RoundLine } from './style';
 
 const CircleInfo = (props: any) => {
-	const { text, styleCircle } = props;
+	const { text, styleCircle, styleLine } = props;
 	return (
 		<LightCircleWrap>
-			<RoundLine />
+			<RoundLine style={styleLine} />
 			<LightCircle>
 				<CircleText>{text}</CircleText>
 			</LightCircle>
