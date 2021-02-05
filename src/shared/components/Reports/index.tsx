@@ -5,11 +5,12 @@ import {
 	Flag,
 	CountryName,
 	InfoNumbers,
-	Numbers
+	Numbers,
+	Arrow
 } from './style';
 
 const Report = (props: any) => {
-	const { countryFlag, country, infoNum } = props;
+	const { countryFlag, country, infoNum, arrowStyle } = props;
 	return (
 		<CountryWrap>
 			<Country>
@@ -18,6 +19,7 @@ const Report = (props: any) => {
 			</Country>
 			<InfoNumbers>
 				<Numbers>{infoNum}</Numbers>
+				<Arrow style={arrowStyle} />
 			</InfoNumbers>
 		</CountryWrap>
 	);

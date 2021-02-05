@@ -198,4 +198,13 @@ export default createGlobalStyle`
 		text-transform: capitalize;
 		font-size: 1.125rem;
 	}
+
+	.social-icon {
+		margin-right: 40px;
+
+		&:last-child {
+			margin-right: 0px;
+		}
+	}
+
 `;

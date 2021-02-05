@@ -6,6 +6,10 @@ export const CountryWrap = styled.div`
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 39px;
+
+	&:last-child {
+		margin-bottom: 0px;
+	}
 `;
 
 export const Country = styled.div`
@@ -34,4 +38,13 @@ export const Numbers = styled.p`
 	font-size: 1.5rem;
 	color: ${color.green};
 	margin-right: 21px;
+`;
+
+export const Arrow = styled.div`
+	width: 0;
+	height: 0;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-bottom: 12px solid ${color.red};
+	border-radius: 4px;
 `;

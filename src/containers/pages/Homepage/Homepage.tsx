@@ -16,7 +16,16 @@ import {
 	CirclesWrapLeft,
 	CirclesWrapRight,
 	MapWrap,
-	MapReport
+	MapReport,
+	Chart,
+	LiveWrap,
+	LiveReportTitle,
+	ArrowWrap,
+	ArrowFirst,
+	ArrowSecond,
+	MapSearch,
+	Search,
+	Magnifier
 } from './style';
 
 // Assets
@@ -30,6 +39,13 @@ import Girl1 from '../../../assets/mask1.png';
 import Girl2 from '../../../assets/mask2.png';
 import Girl3 from '../../../assets/mask3.png';
 import Girl4 from '../../../assets/mask4.png';
+import Flag1 from '../../../assets/usa.png';
+import Flag2 from '../../../assets/italy.png';
+import Flag3 from '../../../assets/china.png';
+import Flag4 from '../../../assets/spain.png';
+import Flag5 from '../../../assets/germany.png';
+import Flag6 from '../../../assets/iran.png';
+import SearchImg from '../../../assets/magnifier.png';
 
 // Components
 import CallToAction from '../../../shared/components/CTA';
@@ -37,6 +53,7 @@ import Text from '../../../shared/components/Text';
 import Card from '../../../shared/components/Card';
 import Recommendation from '../../../shared/components/Recommendation';
 import CircleInfo from '../../../shared/components/Circle';
+import Report from '../../../shared/components/Reports';
 
 const Homepage = () => {
 	return (
@@ -172,7 +189,38 @@ const Homepage = () => {
 				/>
 			</WhatToDo>
 			<MapWrap className='container2'>
-				<MapReport></MapReport>
+				<MapReport>
+					<MapSearch>
+						<Search>
+							<Magnifier src={SearchImg} />
+						</Search>
+					</MapSearch>
+					<Chart>
+						<LiveWrap>
+							<LiveReportTitle>Live reports</LiveReportTitle>
+							<ArrowWrap>
+								<ArrowFirst />
+								<ArrowSecond />
+							</ArrowWrap>
+						</LiveWrap>
+						<Report countryFlag={Flag1} country='USA' infoNum='100,392' />
+						<Report countryFlag={Flag2} country='Italy' infoNum='86,498' />
+						<Report
+							countryFlag={Flag3}
+							country='China'
+							infoNum='81,340'
+							arrowStyle={{
+								borderLeft: '12px solid transparent',
+								borderRight: '12px solid transparent',
+								borderTop: '12px solid #128E5A',
+								borderBottom: '0px'
+							}}
+						/>
+						<Report countryFlag={Flag4} country='Spain' infoNum='64,059' />
+						<Report countryFlag={Flag5} country='Germany' infoNum='50,871' />
+						<Report countryFlag={Flag6} country='Iran' infoNum='32,332' />
+					</Chart>
+				</MapReport>
 			</MapWrap>
 		</React.Fragment>
 	);

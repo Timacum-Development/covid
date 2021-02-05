@@ -100,14 +100,75 @@ export const CirclesWrapRight = styled.div`
 	z-index: 1;
 `;
 
-export const MapWrap = styled.section``;
+export const MapWrap = styled.section`
+	margin-bottom: 149px;
+`;
 
 export const MapReport = styled.div`
+	display: flex;
+	justify-content: flex-end;
 	margin: 0 195px 0 185px;
-	height: 800px;
 	background: url(${Map}) no-repeat left;
 `;
 
 export const Chart = styled.div`
 	padding: 54px 55px 52px;
+	background-color: ${color.white};
+	box-shadow: 5px 10px 30px #a2a5b2;
+`;
+
+export const LiveWrap = styled.div`
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 54px;
+`;
+
+export const LiveReportTitle = styled.h3`
+	font-size: 3rem;
+	color: ${color.green};
+	text-transform: capitalize;
+	margin-right: 51px;
+`;
+
+export const ArrowWrap = styled.div`
+	display: flex;
+	align-items: center;
+	width: 86px;
+	background-color: ${color.white};
+	border-radius: 6px;
+`;
+
+export const ArrowFirst = styled.div`
+	border-left: 7px solid ${color.grey};
+	/* border-right: 7px solid transparent;
+	border-bottom: 7px solid ${color.grey}; */
+`;
+
+export const ArrowSecond = styled.div`
+	border-top: 7px solid ${color.grey};
+	/* border-bottom: 7px solid ${color.grey};
+	border-left: 7px solid transparent; */
+`;
+
+export const MapSearch = styled.div`
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin-right: 36px;
+`;
+
+export const Search = styled.button`
+	padding: 22px 24px;
+	background-color: ${color.white};
+	box-shadow: 5px 10px 30px #a2a5b2;
+	border-radius: 4px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+`;
+
+export const Magnifier = styled.img`
+	display: block;
+	width: 29px;
+	height: 29px;
 `;
