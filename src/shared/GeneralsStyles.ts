@@ -207,4 +207,19 @@ export default createGlobalStyle`
 		}
 	}
 
+	.small-footer {
+		width: 100%;
+		text-align: center;
+		font-size: 1.4375rem;
+		line-height: 28px;
+		margin-bottom: 24px;
+		color: ${color.footerGreen};
+	}
+
+	.line {
+		height: 1px;
+		width: 9px;
+		background-color: ${color.lightGrey};
+	}
+
 `;

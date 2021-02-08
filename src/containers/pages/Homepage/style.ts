@@ -100,15 +100,14 @@ export const CirclesWrapRight = styled.div`
 	z-index: 1;
 `;
 
-export const MapWrap = styled.section`
-	margin-bottom: 149px;
-`;
+export const MapWrap = styled.section``;
 
 export const MapReport = styled.div`
 	display: flex;
 	justify-content: flex-end;
 	margin: 0 195px 0 185px;
 	background: url(${Map}) no-repeat left;
+	margin-bottom: 149px;
 `;
 
 export const Chart = styled.div`
@@ -154,6 +153,7 @@ export const MapSearch = styled.div`
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
+	width: 70%;
 	margin-right: 36px;
 `;
 
@@ -171,4 +171,46 @@ export const Magnifier = styled.img`
 	display: block;
 	width: 29px;
 	height: 29px;
+`;
+
+export const ShowMap = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 85px;
+	height: 223px;
+	background-color: ${color.white};
+	border-radius: 5px;
+	border: 1px solid black;
+	padding: 22px 30px;
+	position: relative;
+	left: 58px;
+`;
+
+export const ZoomIn = styled.div`
+	position: relative;
+	padding: 10px;
+	margin-bottom: 23px;
+
+	&:before {
+		content: '';
+		width: 28px;
+		height: 1px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translateX(-50%);
+		background-color: ${color.darkestGrey};
+	}
+
+	&:after {
+		content: '';
+		width: 1px;
+		height: 28px;
+		position: absolute;
+		left: 50%;
+		top: 0;
+		background-color: ${color.darkestGrey};
+		transform: rotate(180deg);
+	}
 `;

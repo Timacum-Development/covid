@@ -25,7 +25,9 @@ import {
 	ArrowSecond,
 	MapSearch,
 	Search,
-	Magnifier
+	Magnifier,
+	ShowMap,
+	ZoomIn
 } from './style';
 
 // Assets
@@ -191,6 +193,10 @@ const Homepage = () => {
 			<MapWrap className='container2'>
 				<MapReport>
 					<MapSearch>
+						<ShowMap>
+							<ZoomIn />
+							<div className='line'></div>
+						</ShowMap>
 						<Search>
 							<Magnifier src={SearchImg} />
 						</Search>

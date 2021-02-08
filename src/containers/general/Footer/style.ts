@@ -3,8 +3,7 @@ import { color } from '../../../shared/styles';
 
 export const FooterWrap = styled.footer`
 	width: 100%;
-	height: 800px;
-	background: linear-gradient(to bottom, transparent, ${color.lightestRed}));
+	background: linear-gradient(to bottom, transparent, ${color.lightestRed});
 `;
 
 export const Contact = styled.div`
@@ -38,10 +37,15 @@ export const FooterInfo = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-bottom: 43px;
 `;
 
 export const SocialWrap = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+`;
+
+export const LinkWrap = styled.div`
+	display: flex;
 `;
