@@ -21,13 +21,14 @@ import {
 	LiveWrap,
 	LiveReportTitle,
 	ArrowWrap,
-	ArrowFirst,
-	ArrowSecond,
 	MapSearch,
 	Search,
 	Magnifier,
 	ShowMap,
-	ZoomIn
+	ZoomIn,
+	Arrows,
+	RedArrow,
+	GreyArrow
 } from './style';
 
 // Assets
@@ -91,7 +92,7 @@ const Homepage = () => {
 				<Text
 					titleFirst='Covid-19'
 					titleSecond='Contagion'
-					text=''
+					text='Corona viruses are a type of virus. There are many different kinds, and some cause disease. A newly identified type'
 					styleText={{ maxWidth: '570px' }}
 				/>
 				<CardWrap className='container'>
@@ -196,6 +197,12 @@ const Homepage = () => {
 						<ShowMap>
 							<ZoomIn />
 							<div className='line'></div>
+							<div className='line-second'></div>
+							<div className='line'></div>
+							<Arrows>
+								<RedArrow />
+								<GreyArrow />
+							</Arrows>
 						</ShowMap>
 						<Search>
 							<Magnifier src={SearchImg} />
@@ -205,8 +212,8 @@ const Homepage = () => {
 						<LiveWrap>
 							<LiveReportTitle>Live reports</LiveReportTitle>
 							<ArrowWrap>
-								<ArrowFirst />
-								<ArrowSecond />
+								<i className='small-arrow left'></i>
+								<i className='small-arrow right'></i>
 							</ArrowWrap>
 						</LiveWrap>
 						<Report countryFlag={Flag1} country='USA' infoNum='100,392' />

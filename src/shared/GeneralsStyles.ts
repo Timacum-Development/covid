@@ -217,9 +217,36 @@ export default createGlobalStyle`
 	}
 
 	.line {
-		height: 1px;
+		border: 1px solid ${color.lightGrey};
 		width: 9px;
-		background-color: ${color.lightGrey};
+		margin-bottom: 28px;
 	}
+
+	.line-second {
+		border: 1px solid ${color.darkestGrey};
+		width: 28px;
+		margin-bottom: 26px;
+		cursor: pointer;
+	}
+
+	.right {
+		border: solid ${color.lightGrey};
+		border-width: 0 3px 3px 0;
+		display: inline-block;
+		padding: 7px;
+		transform: rotate(-45deg);
+		
+	}
+
+	.left {
+		border: solid ${color.arrowRed};
+		border-width: 0 3px 3px 0;
+		display: inline-block;
+		padding: 7px;
+		transform: rotate(135deg);
+		margin-right: 19px;
+	}
+
+	
 
 `;

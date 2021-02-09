@@ -132,21 +132,21 @@ export const LiveReportTitle = styled.h3`
 export const ArrowWrap = styled.div`
 	display: flex;
 	align-items: center;
-	width: 86px;
+	padding: 17px 16px;
 	background-color: ${color.white};
 	border-radius: 6px;
-`;
+	box-shadow: 2px 2px 20px ${color.lightGrey};
+	position: relative;
 
-export const ArrowFirst = styled.div`
-	border-left: 7px solid ${color.grey};
-	/* border-right: 7px solid transparent;
-	border-bottom: 7px solid ${color.grey}; */
-`;
-
-export const ArrowSecond = styled.div`
-	border-top: 7px solid ${color.grey};
-	/* border-bottom: 7px solid ${color.grey};
-	border-left: 7px solid transparent; */
+	&:before {
+		content: '';
+		width: 3px;
+		height: 25px;
+		background-color: rgba(222, 225, 237);
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
 `;
 
 export const MapSearch = styled.div`
@@ -154,13 +154,14 @@ export const MapSearch = styled.div`
 	align-items: flex-start;
 	justify-content: space-between;
 	width: 70%;
+	max-width: 943px;
 	margin-right: 36px;
 `;
 
 export const Search = styled.button`
 	padding: 22px 24px;
 	background-color: ${color.white};
-	box-shadow: 5px 10px 30px #a2a5b2;
+	box-shadow: 5px 10px 30px ${color.lightGrey};
 	border-radius: 4px;
 	outline: none;
 	border: none;
@@ -177,35 +178,33 @@ export const ShowMap = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 85px;
-	height: 223px;
 	background-color: ${color.white};
 	border-radius: 5px;
-	border: 1px solid black;
-	padding: 22px 30px;
+	padding: 22px 29px;
 	position: relative;
 	left: 58px;
+	box-shadow: 2px 2px 20px ${color.lightGrey};
 `;
 
 export const ZoomIn = styled.div`
 	position: relative;
-	padding: 10px;
+	padding: 12px;
 	margin-bottom: 23px;
+	cursor: pointer;
 
 	&:before {
 		content: '';
 		width: 28px;
-		height: 1px;
+		height: 2px;
 		position: absolute;
-		left: 50%;
+		left: 0;
 		top: 50%;
-		transform: translateX(-50%);
 		background-color: ${color.darkestGrey};
 	}
 
 	&:after {
 		content: '';
-		width: 1px;
+		width: 2px;
 		height: 28px;
 		position: absolute;
 		left: 50%;
@@ -213,4 +212,29 @@ export const ZoomIn = styled.div`
 		background-color: ${color.darkestGrey};
 		transform: rotate(180deg);
 	}
+`;
+
+export const Arrows = styled.div`
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+`;
+
+export const RedArrow = styled.div`
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 23px solid ${color.arrowRed};
+	margin-bottom: 2px;
+	cursor: pointer;
+`;
+
+export const GreyArrow = styled.div`
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 23px solid ${color.lightGrey};
+	cursor: pointer;
 `;
