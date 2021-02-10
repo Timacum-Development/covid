@@ -3,6 +3,8 @@ import { color } from '../../../shared/styles';
 
 export const FooterWrap = styled.footer`
 	width: 100%;
+	position: relative;
+	overflow: hidden;
 	background: linear-gradient(to bottom, transparent, ${color.lightestRed});
 `;
 

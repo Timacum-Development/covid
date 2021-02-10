@@ -3,11 +3,13 @@ import { color } from '../../styles';
 
 export const LightCircleWrap = styled.div`
 	position: relative;
+	margin-bottom: 50px;
 `;
 
 export const CircleText = styled.p`
 	font-size: 1.375rem;
 	color: ${color.darkestRed};
+	line-height: 25px;
 	text-transform: uppercase;
 	text-align: center;
 	font-weight: 500;
@@ -33,6 +35,6 @@ export const RoundLine = styled.div`
 	border-bottom: 10px solid white;
 	transform: rotate(140deg);
 	position: absolute;
-	right: -25px;
-	bottom: 25px;
+	right: -30px;
+	bottom: 20px;
 `;

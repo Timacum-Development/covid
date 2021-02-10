@@ -30,6 +30,8 @@ export const HeroImg = styled.img`
 
 export const About = styled.section`
 	display: flex;
+	position: relative;
+	overflow: hidden;
 `;
 
 export const CoronaImg = styled.img`
@@ -65,7 +67,6 @@ export const SymptomsWrap = styled.div`
 export const GirlBg = styled.div`
 	background: url(${BgGirl}) no-repeat center;
 	width: 100%;
-	/* max-width: 710px; */
 	height: 690px;
 	margin: 0 auto;
 	position: relative;
@@ -80,6 +81,7 @@ export const GirlImg = styled.img`
 
 export const WhatToDo = styled.section`
 	position: relative;
+	overflow: hidden;
 `;
 
 export const CirclesWrapLeft = styled.div`

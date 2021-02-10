@@ -49,6 +49,12 @@ import Flag4 from '../../../assets/spain.png';
 import Flag5 from '../../../assets/germany.png';
 import Flag6 from '../../../assets/iran.png';
 import SearchImg from '../../../assets/magnifier.png';
+import Covid1 from '../../../assets/covid-side-img.png';
+import Covid2 from '../../../assets/green-covid-larger.png';
+import Covid3 from '../../../assets/green-covid.png';
+import Covid4 from '../../../assets/covid-red.png';
+import Shape1 from '../../../assets/symptoms-shape.png';
+import Shape2 from '../../../assets/symptoms-shape2.png';
 
 // Components
 import CallToAction from '../../../shared/components/CTA';
@@ -57,6 +63,7 @@ import Card from '../../../shared/components/Card';
 import Recommendation from '../../../shared/components/Recommendation';
 import CircleInfo from '../../../shared/components/Circle';
 import Report from '../../../shared/components/Reports';
+import Virus from '../../../shared/components/Virus';
 
 const Homepage = () => {
 	return (
@@ -87,13 +94,42 @@ const Homepage = () => {
 					</p>
 					<CallToAction text='Learn more' />
 				</AboutWrap>
+
+				<Virus
+					virus={Covid1}
+					style={{
+						right: '-97px',
+						bottom: '0px',
+						width: '283px',
+						height: '292px'
+					}}
+				/>
 			</About>
 			<Contagion>
+				<Virus
+					virus={Covid1}
+					style={{
+						right: '60px',
+						top: '0px',
+						width: '131px',
+						height: '136px'
+					}}
+				/>
 				<Text
 					titleFirst='Covid-19'
 					titleSecond='Contagion'
 					text='Corona viruses are a type of virus. There are many different kinds, and some cause disease. A newly identified type'
 					styleText={{ maxWidth: '570px' }}
+				/>
+				<Virus
+					virus={Covid1}
+					style={{
+						left: '100px',
+						bottom: '0px',
+						width: '254px',
+						height: '259px',
+						zIndex: '-100'
+					}}
 				/>
 				<CardWrap className='container'>
 					<Card
@@ -123,6 +159,13 @@ const Homepage = () => {
 					text='Corona viruses are a type of virus. There are many different kinds, and some cause disease. A newly identified type has caused a recent outbreak of respiratory '
 					styleText={{ maxWidth: '770px' }}
 				/>
+				<Virus
+					virus={Shape1}
+					style={{
+						left: '91px',
+						bottom: '200px'
+					}}
+				/>
 				<SymptomsWrap>
 					<CirclesWrapLeft>
 						<CircleInfo text='Fever' />
@@ -138,8 +181,25 @@ const Homepage = () => {
 						<CircleInfo text='Shaking chills' />
 					</CirclesWrapRight>
 				</SymptomsWrap>
+				<Virus
+					virus={Shape2}
+					style={{
+						right: '38px',
+						bottom: '-80px'
+					}}
+				/>
 			</Symptoms>
 			<WhatToDo className='container2'>
+				<Virus
+					virus={Covid2}
+					style={{
+						left: '-136px',
+						top: '25%',
+						width: '277px',
+						height: '287px',
+						zIndex: '-1'
+					}}
+				/>
 				<Text
 					titleFirst='Covid-19'
 					titleSecond='What should we do'
@@ -168,6 +228,15 @@ const Homepage = () => {
 					styleImg={{ marginRight: '148px' }}
 					styleTitle={{ marginBottom: '35px' }}
 				/>
+				<Virus
+					virus={Covid3}
+					style={{
+						right: '32px',
+						bottom: '500px',
+						width: '128px',
+						height: '131px'
+					}}
+				/>
 				<Recommendation
 					number='03'
 					title='Use nose -  rag'
@@ -176,6 +245,15 @@ const Homepage = () => {
 					styleTxt={{ maxWidth: '652px', marginRight: '216px' }}
 					style={{ margin: '0px 234px 0px 244px' }}
 					styleTitle={{ marginBottom: '36px' }}
+				/>
+				<Virus
+					virus={Covid4}
+					style={{
+						right: '-153px',
+						bottom: '167px',
+						width: '315px',
+						height: '324px'
+					}}
 				/>
 				<Recommendation
 					number='04'

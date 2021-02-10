@@ -14,12 +14,15 @@ import Icon1 from '../../../assets/facebook.png';
 import Icon2 from '../../../assets/youtube.png';
 import Icon3 from '../../../assets/vine.png';
 import Icon4 from '../../../assets/twitter.png';
+import Corona1 from '../../../assets/covid-footer-smaller.png';
+import Corona2 from '../../../assets/covid-footer-larger.png';
 
 // Components
 import Logo from '../../../shared/components/Logo';
 import CallToAction from '../../../shared/components/CTA';
 import Social from '../../../shared/components/Social';
 import Link from '../../../shared/components/Link';
+import Virus from '../../../shared/components/Virus';
 
 const Footer = () => {
 	return (
@@ -93,6 +96,24 @@ const Footer = () => {
 					</p>
 				</LinkWrap>
 			</div>
+			<Virus
+				virus={Corona2}
+				style={{
+					right: '176px',
+					top: '28px',
+					width: '150px',
+					height: '154px'
+				}}
+			/>
+			<Virus
+				virus={Corona1}
+				style={{
+					right: '-136px',
+					bottom: '130px',
+					width: '283px',
+					height: '292px'
+				}}
+			/>
 		</FooterWrap>
 	);
 };
