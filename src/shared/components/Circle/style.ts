@@ -3,7 +3,7 @@ import { color } from '../../styles';
 
 export const LightCircleWrap = styled.div`
 	position: relative;
-	margin-bottom: 80px;
+	margin-bottom: 65px;
 `;
 
 export const CircleText = styled.p`
@@ -23,7 +23,6 @@ export const LightCircle = styled.div`
 	height: 141px;
 	border-radius: 50%;
 	background-color: ${color.lightRed};
-	margin-bottom: 50px;
 	position: absolute;
 	top: 10px;
 	right: 0;
@@ -48,7 +47,7 @@ export const RoundLine = styled.div`
 		background-color: ${color.lightRed};
 		position: absolute;
 		transform: rotate(-140deg);
-		bottom: 164px;
+		bottom: 162px;
 		left: 178px;
 	}
 

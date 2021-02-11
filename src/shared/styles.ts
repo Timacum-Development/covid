@@ -17,7 +17,7 @@ export const color = {
 	lightRed: '#FFD0D0',
 	lightestRed: '#FFF1F1',
 	darkerLightestRed: '#FFB2B1',
-	dotRed: '#FF383D',
+	dotRed: '#F2AEB0',
 	arrowRed: '#F44A45',
 	darkerRed: '#FB4C47',
 	darkestRed: '#FF383D'

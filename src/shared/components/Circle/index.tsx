@@ -2,7 +2,7 @@ import React from 'react';
 import { LightCircleWrap, LightCircle, CircleText, RoundLine } from './style';
 
 const CircleInfo = (props: any) => {
-	const { text, styleCircle, styleLine } = props;
+	const { text, styleLine } = props;
 	return (
 		<LightCircleWrap>
 			<RoundLine style={styleLine} />

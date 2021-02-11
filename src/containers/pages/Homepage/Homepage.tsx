@@ -171,17 +171,37 @@ const Homepage = () => {
 				<SymptomsWrap>
 					<CirclesWrapLeft>
 						<CircleInfo text='Fever' />
-
-						<CircleInfo text='Throat pain' />
+						<CircleInfo
+							text='Throat pain'
+							styleLine={{
+								border: '3px solid #fff',
+								borderRight: '3px solid #FFD0D0',
+								borderBottom: '3px solid #FFD0D0'
+							}}
+						/>
 						<CircleInfo text='Dypsnoea' />
 					</CirclesWrapLeft>
 					<GirlBg>
 						<GirlImg src={Girl} />
 					</GirlBg>
 					<CirclesWrapRight>
-						<CircleInfo text='Headache' />
+						<CircleInfo
+							text='Headache'
+							styleLine={{
+								border: '3px solid #fff',
+								borderRight: '3px solid #FFD0D0',
+								borderBottom: '3px solid #FFD0D0'
+							}}
+						/>
 						<CircleInfo text='Runny nose' />
-						<CircleInfo text='Shaking chills' />
+						<CircleInfo
+							text='Shaking chills'
+							styleLine={{
+								border: '3px solid #fff',
+								borderRight: '3px solid #FFD0D0',
+								borderBottom: '3px solid #FFD0D0'
+							}}
+						/>
 					</CirclesWrapRight>
 				</SymptomsWrap>
 				<Virus
