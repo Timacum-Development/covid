@@ -64,6 +64,38 @@ export const SymptomsWrap = styled.div`
 	position: relative;
 `;
 
+export const Line = styled.div`
+	/* width: 397px;
+	border: 5px solid ${color.darkerLightestRed};
+	border-radius: 24px;
+	position: relative;
+
+	&:before {
+		content: '';
+		width: 100px;
+		height: 0;
+		border: 5px solid ${color.darkerLightestRed};
+		border-radius: 24px;
+		position: absolute;
+		right: -94px;
+		top: 32px;
+		transform: rotate(45deg);
+		z-index: 50;
+	}
+
+	&:after {
+		content: '';
+		width: 100px;
+		height: 0;
+		border: 5px solid ${color.darkerLightestRed};
+		border-radius: 24px;
+		position: absolute;
+		right: -183px;
+		bottom: -80px;
+		z-index: 50;
+	} */
+`;
+
 export const GirlBg = styled.div`
 	background: url(${BgGirl}) no-repeat center;
 	width: 100%;

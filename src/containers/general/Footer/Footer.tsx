@@ -100,7 +100,7 @@ const Footer = () => {
 				virus={Corona2}
 				style={{
 					right: '176px',
-					top: '28px',
+					top: '25px',
 					width: '150px',
 					height: '154px'
 				}}
@@ -108,10 +108,10 @@ const Footer = () => {
 			<Virus
 				virus={Corona1}
 				style={{
-					right: '-136px',
+					right: '-177px',
 					bottom: '130px',
-					width: '283px',
-					height: '292px'
+					width: '374px',
+					height: '373px'
 				}}
 			/>
 		</FooterWrap>

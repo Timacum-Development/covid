@@ -28,7 +28,8 @@ import {
 	ZoomIn,
 	Arrows,
 	RedArrow,
-	GreyArrow
+	GreyArrow,
+	Line
 } from './style';
 
 // Assets
@@ -115,6 +116,7 @@ const Homepage = () => {
 						height: '136px'
 					}}
 				/>
+
 				<Text
 					titleFirst='Covid-19'
 					titleSecond='Contagion'
@@ -169,6 +171,7 @@ const Homepage = () => {
 				<SymptomsWrap>
 					<CirclesWrapLeft>
 						<CircleInfo text='Fever' />
+
 						<CircleInfo text='Throat pain' />
 						<CircleInfo text='Dypsnoea' />
 					</CirclesWrapLeft>
@@ -312,6 +315,14 @@ const Homepage = () => {
 						<Report countryFlag={Flag6} country='Iran' infoNum='32,332' />
 					</Chart>
 				</MapReport>
+				<svg width='190' height='160'>
+					<path
+						d=' M 190 30 C 100 50, 65 10, 95 80 S 150 100, 400 100'
+						stroke='#FFB2B1'
+						stroke-width='5'
+						fill='transparent'
+					/>
+				</svg>
 			</MapWrap>
 		</React.Fragment>
 	);

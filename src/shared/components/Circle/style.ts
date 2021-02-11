@@ -3,7 +3,7 @@ import { color } from '../../styles';
 
 export const LightCircleWrap = styled.div`
 	position: relative;
-	margin-bottom: 50px;
+	margin-bottom: 80px;
 `;
 
 export const CircleText = styled.p`
@@ -24,6 +24,9 @@ export const LightCircle = styled.div`
 	border-radius: 50%;
 	background-color: ${color.lightRed};
 	margin-bottom: 50px;
+	position: absolute;
+	top: 10px;
+	right: 0;
 `;
 
 export const RoundLine = styled.div`
@@ -31,10 +34,32 @@ export const RoundLine = styled.div`
 	height: 200px;
 	border-radius: 50%;
 	border: 3px solid ${color.lightRed};
-	border-right: 10px solid white;
-	border-bottom: 10px solid white;
+	border-right: 3px solid white;
+	border-bottom: 3px solid white;
 	transform: rotate(140deg);
-	position: absolute;
 	right: -30px;
 	bottom: 20px;
+	position: relative;
+
+	&:before {
+		content: '';
+		width: 3px;
+		height: 40px;
+		background-color: ${color.lightRed};
+		position: absolute;
+		transform: rotate(-140deg);
+		bottom: 164px;
+		left: 178px;
+	}
+
+	&:after {
+		content: '';
+		width: 14px;
+		height: 14px;
+		background-color: ${color.dotRed};
+		border-radius: 50%;
+		position: absolute;
+		bottom: 195px;
+		left: 187px;
+	}
 `;
