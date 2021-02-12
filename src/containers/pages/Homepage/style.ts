@@ -12,7 +12,7 @@ export const Hero = styled.section`
 	display: flex;
 	align-items: center;
 	overflow: hidden;
-	background: linear-gradient(to bottom, rgba(250, 86, 82, 0.15), transparent);
+	background: linear-gradient(to bottom, ${color.lightestRed}, transparent);
 `;
 
 export const HeroIntro = styled.div`
