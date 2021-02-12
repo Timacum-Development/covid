@@ -2,9 +2,9 @@ import React from 'react';
 import { TextWrap, TitleWrap } from './style';
 
 const Text = (props: any) => {
-	const { titleFirst, titleSecond, text, styleText } = props;
+	const { titleFirst, titleSecond, text, styleText, styleWrap } = props;
 	return (
-		<TextWrap>
+		<TextWrap style={styleWrap}>
 			<TitleWrap>
 				<h6>{titleFirst}</h6>
 				<h2>{titleSecond}</h2>

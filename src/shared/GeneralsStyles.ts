@@ -246,7 +246,117 @@ export default createGlobalStyle`
 		transform: rotate(135deg);
 		margin-right: 19px;
 	}
-
 	
+	.line1,
+	.line2,
+	.line3,
+	.line4,
+	.line5,
+	.line6 {
+		position: absolute;
+	}
+
+	.line-wrap1 {
+		top: -170px;
+		left: 250px;
+
+		&:before {
+			content: '';
+			width: 18px;
+			height: 18px;
+			border-radius: 50%;
+			background-color: ${color.red};
+			position: absolute;
+			left: -5px;
+			top: -7px;
+			z-index: 5;
+		}
+	}
+
+	.line-wrap2 {
+		top: -250px;
+		left: 230px;
+
+		&:before {
+			content: '';
+			width: 18px;
+			height: 18px;
+			border-radius: 50%;
+			background-color: ${color.red};
+			position: absolute;
+			left: -5px;
+			bottom: -85px;
+			z-index: 5;
+		}
+	}
+
+	.line-wrap3 {
+		bottom: 350px;
+		left: 250px;
+
+		&:before {
+			content: '';
+			width: 18px;
+			height: 18px;
+			border-radius: 50%;
+			background-color: ${color.red};
+			position: absolute;
+			left: -5px;
+			bottom: -174px;
+			z-index: 5;
+		}
+	}
+
+	.line-wrap4 {
+		top: -170px;
+		right: 300px;
+
+		&:before {
+			content: '';
+			width: 18px;
+			height: 18px;
+			border-radius: 50%;
+			background-color: ${color.red};
+			position: absolute;
+			right: -115px;
+			top: -6px;
+			z-index: 5;
+		}
+	}
+
+	.line-wrap5 {
+		top: -290px;
+		right: 300px;
+
+		&:before {
+			content: '';
+			width: 18px;
+			height: 18px;
+			border-radius: 50%;
+			background-color: ${color.red};
+			position: absolute;
+			right: -130px;
+    		top: 75px;
+			z-index: 5;
+		}
+	}
+
+	.line-wrap6 {
+		bottom: 200px;
+		right: 250px;
+
+		&:before {
+			content: '';
+			width: 18px;
+			height: 18px;
+			border-radius: 50%;
+			background-color: ${color.red};
+			position: absolute;
+			right: -60px;
+    		bottom: -10px;
+			z-index: 5;
+		}
+	}
+
 
 `;

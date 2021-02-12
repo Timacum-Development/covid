@@ -8,7 +8,7 @@ export const TextWrap = styled.div`
 `;
 
 export const TitleWrap = styled.div`
-	margin-bottom: 31px;
+	margin-bottom: 13px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;

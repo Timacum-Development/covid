@@ -29,7 +29,7 @@ import {
 	Arrows,
 	RedArrow,
 	GreyArrow,
-	Line
+	LineWrap
 } from './style';
 
 // Assets
@@ -116,24 +116,24 @@ const Homepage = () => {
 						height: '136px'
 					}}
 				/>
-
 				<Text
 					titleFirst='Covid-19'
 					titleSecond='Contagion'
 					text='Corona viruses are a type of virus. There are many different kinds, and some cause disease. A newly identified type'
 					styleText={{ maxWidth: '570px' }}
 				/>
-				<Virus
-					virus={Covid1}
-					style={{
-						left: '100px',
-						bottom: '0px',
-						width: '254px',
-						height: '259px',
-						zIndex: '-100'
-					}}
-				/>
+
 				<CardWrap className='container'>
+					<Virus
+						virus={Covid1}
+						style={{
+							left: '100px',
+							bottom: '0px',
+							width: '254px',
+							height: '259px',
+							zIndex: '-50'
+						}}
+					/>
 					<Card
 						infoIcon={Card1}
 						title='Air Transmission'
@@ -160,6 +160,7 @@ const Homepage = () => {
 					titleSecond='Symptoms'
 					text='Corona viruses are a type of virus. There are many different kinds, and some cause disease. A newly identified type has caused a recent outbreak of respiratory '
 					styleText={{ maxWidth: '770px' }}
+					styleWrap={{ marginBottom: '80px' }}
 				/>
 				<Virus
 					virus={Shape1}
@@ -171,6 +172,22 @@ const Homepage = () => {
 				<SymptomsWrap>
 					<CirclesWrapLeft>
 						<CircleInfo text='Fever' />
+						<LineWrap className='line-wrap1 '>
+							<svg
+								className='line1'
+								width='398'
+								height='65'
+								viewBox='0 0 398 65'
+								fill='none'
+								xmlns='http://www.w3.org/2000/svg'>
+								<path
+									d='M0.269531 2.74963H113.515C120.784 2.74963 127.662 6.04471 132.218 11.71L165.458 53.0476C170.173 58.9102 177.363 62.2231 184.883 61.9971L397.85 55.5965'
+									stroke='#FFB2B1'
+									stroke-width='5'
+									stroke-linejoin='round'
+								/>
+							</svg>
+						</LineWrap>
 						<CircleInfo
 							text='Throat pain'
 							styleLine={{
@@ -179,7 +196,39 @@ const Homepage = () => {
 								borderBottom: '3px solid #FFD0D0'
 							}}
 						/>
+						<LineWrap className='line-wrap2'>
+							<svg
+								className='line2'
+								width='442'
+								height='80'
+								viewBox='0 0 442 80'
+								fill='none'
+								xmlns='http://www.w3.org/2000/svg'>
+								<path
+									d='M0.511475 77.0704H203.822C211.243 77.0704 218.246 73.6376 222.792 67.7721L265.528 12.6288C270.074 6.76335 277.077 3.33057 284.498 3.33057H441.721'
+									stroke='#FFB2B1'
+									stroke-width='5'
+									stroke-linejoin='round'
+								/>
+							</svg>
+						</LineWrap>
 						<CircleInfo text='Dypsnoea' />
+						<LineWrap className='line-wrap3'>
+							<svg
+								className='line3'
+								width='487'
+								height='168'
+								viewBox='0 0 487 168'
+								fill='none'
+								xmlns='http://www.w3.org/2000/svg'>
+								<path
+									d='M0.740479 164.834H179.033C188.666 164.834 197.365 159.075 201.127 150.207L257.54 17.2331C261.302 8.36547 270.002 2.60626 279.634 2.60626H486.809'
+									stroke='#FFB2B1'
+									stroke-width='5'
+									stroke-linejoin='round'
+								/>
+							</svg>
+						</LineWrap>
 					</CirclesWrapLeft>
 					<GirlBg>
 						<GirlImg src={Girl} />
@@ -193,7 +242,39 @@ const Homepage = () => {
 								borderBottom: '3px solid #FFD0D0'
 							}}
 						/>
+						<LineWrap className='line-wrap4'>
+							<svg
+								className='line4'
+								width='302'
+								height='46'
+								viewBox='0 0 302 46'
+								fill='none'
+								xmlns='http://www.w3.org/2000/svg'>
+								<path
+									d='M301.839 2.85931H175.559C169.442 2.85931 163.555 5.1953 159.102 9.38995L130.567 36.2711C126.114 40.4657 120.228 42.8017 114.11 42.8017H0.120361'
+									stroke='#FFB2B1'
+									stroke-width='5'
+									stroke-linejoin='round'
+								/>
+							</svg>
+						</LineWrap>
 						<CircleInfo text='Runny nose' />
+						<LineWrap className='line-wrap5'>
+							<svg
+								className='line5'
+								width='326'
+								height='89'
+								viewBox='0 0 326 89'
+								fill='none'
+								xmlns='http://www.w3.org/2000/svg'>
+								<path
+									d='M0.77002 3.04565H169.584C178.398 3.04565 186.503 7.87693 190.695 15.63L221.944 73.4192C226.136 81.1723 234.241 86.0035 243.055 86.0035H325.84'
+									stroke='#FFB2B1'
+									stroke-width='5'
+									stroke-linejoin='round'
+								/>
+							</svg>
+						</LineWrap>
 						<CircleInfo
 							text='Shaking chills'
 							styleLine={{
@@ -202,6 +283,22 @@ const Homepage = () => {
 								borderBottom: '3px solid #FFD0D0'
 							}}
 						/>
+						<LineWrap className='line-wrap6'>
+							<svg
+								className='line6'
+								width='249'
+								height='55'
+								viewBox='0 0 249 55'
+								fill='none'
+								xmlns='http://www.w3.org/2000/svg'>
+								<path
+									d='M0.737793 52.4006H91.8462C99.1244 52.4006 106.009 49.0979 110.565 43.4214L136.096 11.6054C140.651 5.92894 147.536 2.62622 154.814 2.62622H248.995'
+									stroke='#FFA6A6'
+									stroke-width='5'
+									stroke-linejoin='round'
+								/>
+							</svg>
+						</LineWrap>
 					</CirclesWrapRight>
 				</SymptomsWrap>
 				<Virus
@@ -228,6 +325,7 @@ const Homepage = () => {
 					titleSecond='What should we do'
 					text='Corona viruses are a type of virus. There are many different kinds, and some cause disease. A newly identified type has caused '
 					styleText={{ maxWidth: '770px' }}
+					styleWrap={{ marginBottom: '71px' }}
 				/>
 				<Recommendation
 					number='01'
@@ -335,14 +433,6 @@ const Homepage = () => {
 						<Report countryFlag={Flag6} country='Iran' infoNum='32,332' />
 					</Chart>
 				</MapReport>
-				<svg width='190' height='160'>
-					<path
-						d=' M 190 30 C 100 50, 65 10, 95 80 S 150 100, 400 100'
-						stroke='#FFB2B1'
-						stroke-width='5'
-						fill='transparent'
-					/>
-				</svg>
 			</MapWrap>
 		</React.Fragment>
 	);

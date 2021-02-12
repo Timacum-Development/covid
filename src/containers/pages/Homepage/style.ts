@@ -41,13 +41,13 @@ export const CoronaImg = styled.img`
 `;
 
 export const AboutWrap = styled.div`
-	max-width: 848px;
+	max-width: 748px;
 	padding: 100px 0;
 `;
 
 export const Contagion = styled.section`
 	position: relative;
-	margin-bottom: 148px;
+	margin-bottom: 149px;
 `;
 
 export const CardWrap = styled.div`
@@ -57,49 +57,17 @@ export const CardWrap = styled.div`
 
 export const Symptoms = styled.section`
 	position: relative;
-	margin-bottom: 217px;
+	margin-bottom: 140px;
 `;
 
 export const SymptomsWrap = styled.div`
 	position: relative;
 `;
 
-export const Line = styled.div`
-	/* width: 397px;
-	border: 5px solid ${color.darkerLightestRed};
-	border-radius: 24px;
-	position: relative;
-
-	&:before {
-		content: '';
-		width: 100px;
-		height: 0;
-		border: 5px solid ${color.darkerLightestRed};
-		border-radius: 24px;
-		position: absolute;
-		right: -94px;
-		top: 32px;
-		transform: rotate(45deg);
-		z-index: 50;
-	}
-
-	&:after {
-		content: '';
-		width: 100px;
-		height: 0;
-		border: 5px solid ${color.darkerLightestRed};
-		border-radius: 24px;
-		position: absolute;
-		right: -183px;
-		bottom: -80px;
-		z-index: 50;
-	} */
-`;
-
 export const GirlBg = styled.div`
 	background: url(${BgGirl}) no-repeat center;
 	width: 100%;
-	height: 690px;
+	height: 800px;
 	margin: 0 auto;
 	position: relative;
 `;
@@ -120,8 +88,8 @@ export const CirclesWrapLeft = styled.div`
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	left: 375px;
-	top: 0;
+	left: 355px;
+	top: 50px;
 	z-index: 1;
 `;
 
@@ -130,7 +98,7 @@ export const CirclesWrapRight = styled.div`
 	flex-direction: column;
 	position: absolute;
 	right: 375px;
-	top: 0;
+	top: 30px;
 	z-index: 1;
 `;
 
@@ -271,4 +239,8 @@ export const GreyArrow = styled.div`
 	border-right: 10px solid transparent;
 	border-top: 23px solid ${color.lightGrey};
 	cursor: pointer;
+`;
+
+export const LineWrap = styled.div`
+	position: relative;
 `;
