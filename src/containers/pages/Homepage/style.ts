@@ -122,7 +122,6 @@ export const MapReport = styled.div`
 	justify-content: flex-end;
 	margin: 0 195px 0 185px;
 	background: url(${Map}) no-repeat left;
-	margin-bottom: 149px;
 `;
 
 export const Chart = styled.div`

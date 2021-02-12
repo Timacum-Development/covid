@@ -5,6 +5,7 @@ export const FooterWrap = styled.footer`
 	width: 100%;
 	position: relative;
 	overflow: hidden;
+	padding-top: 149px;
 	background: linear-gradient(to bottom, transparent, ${color.lightestRed});
 `;
 
