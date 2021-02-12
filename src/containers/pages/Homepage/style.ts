@@ -70,11 +70,11 @@ export const CardWrap = styled.div`
 
 export const Symptoms = styled.section`
 	position: relative;
-	margin-bottom: 140px;
 `;
 
 export const SymptomsWrap = styled.div`
 	position: relative;
+	margin-bottom: 117px;
 `;
 
 export const GirlBg = styled.div`
