@@ -4,6 +4,7 @@ import { color } from '../../../shared/styles';
 // Assets
 import BgGirl from '../../../assets/bg-girl.png';
 import Map from '../../../assets/world-map.png';
+import CovidPic from '../../../assets/half-covid.png';
 
 export const Hero = styled.section`
 	width: 100%;
@@ -53,6 +54,18 @@ export const Contagion = styled.section`
 export const CardWrap = styled.div`
 	display: flex;
 	justify-content: space-between;
+	position: relative;
+
+	&:before {
+		content: '';
+		width: 254px;
+		height: 290px;
+		background: url(${CovidPic}) no-repeat center;
+		position: absolute;
+		left: -202px;
+		bottom: 10px;
+		z-index: -1;
+	}
 `;
 
 export const Symptoms = styled.section`

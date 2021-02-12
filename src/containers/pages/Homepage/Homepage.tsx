@@ -54,7 +54,6 @@ import Covid1 from '../../../assets/covid-side-img.png';
 import Covid2 from '../../../assets/green-covid-larger.png';
 import Covid3 from '../../../assets/green-covid.png';
 import Covid4 from '../../../assets/covid-red.png';
-import HalfCovid from '../../../assets/half-covid.png';
 import Shape1 from '../../../assets/symptoms-shape.png';
 import Shape2 from '../../../assets/symptoms-shape2.png';
 
@@ -123,15 +122,7 @@ const Homepage = () => {
 					text='Corona viruses are a type of virus. There are many different kinds, and some cause disease. A newly identified type'
 					styleText={{ maxWidth: '570px' }}
 				/>
-				<Virus
-					virus={HalfCovid}
-					style={{
-						left: '95px',
-						bottom: '10px',
-						zIndex: '-1',
-						height: '259px'
-					}}
-				/>
+
 				<CardWrap className='container'>
 					<Card
 						infoIcon={Card1}
