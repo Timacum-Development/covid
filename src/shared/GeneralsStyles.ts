@@ -233,8 +233,9 @@ export default createGlobalStyle`
 		border: solid ${color.lightGrey};
 		border-width: 0 3px 3px 0;
 		display: inline-block;
-		padding: 7px;
+		padding: 6px;
 		transform: rotate(-45deg);
+		border-radius: 3px;
 		
 	}
 
@@ -242,9 +243,10 @@ export default createGlobalStyle`
 		border: solid ${color.arrowRed};
 		border-width: 0 3px 3px 0;
 		display: inline-block;
-		padding: 7px;
+		padding: 6px;
 		transform: rotate(135deg);
 		margin-right: 19px;
+		border-radius: 3px;
 	}
 	
 	.line1,

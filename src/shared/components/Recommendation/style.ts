@@ -1,5 +1,23 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { color } from '../../styles';
+
+export const GirlHover = keyframes`
+	0%{
+		transform: scale(1);
+	}
+
+	50%{
+		transform: scale(1.1);
+	}
+
+	50%{
+		transform: scale(1.05);
+	}
+
+	100%{
+		transform: scale(1);
+	}
+`;
 
 export const InfoWrap = styled.div`
 	display: flex;
@@ -13,6 +31,11 @@ export const InfoText = styled.div`
 
 export const InfoGirl = styled.img`
 	display: block;
+	transition: animation 0.5s ease-out;
+
+	&:hover {
+		animation: ${GirlHover} 1s ease-in-out forwards;
+	}
 `;
 
 export const InfoParagraph = styled.p`

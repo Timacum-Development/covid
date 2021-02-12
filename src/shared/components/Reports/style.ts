@@ -32,6 +32,7 @@ export const Flag = styled.img`
 export const CountryName = styled.p`
 	font-size: 1.9375rem;
 	color: ${color.darkerGreen};
+	font-weight: 600;
 `;
 
 export const Numbers = styled.p`

@@ -9,10 +9,10 @@ export const LightCircleWrap = styled.div`
 export const CircleText = styled.p`
 	font-size: 1.375rem;
 	color: ${color.darkestRed};
-	line-height: 25px;
+	line-height: 27px;
 	text-transform: uppercase;
 	text-align: center;
-	font-weight: 500;
+	font-weight: 600;
 `;
 
 export const LightCircle = styled.div`
