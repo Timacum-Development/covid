@@ -144,7 +144,7 @@ const Homepage = () => {
 					/>
 				</CardWrap>
 			</Contagion>
-			<Symptoms>
+			<Symptoms className='container2'>
 				<Text
 					titleFirst='Covid-19'
 					titleSecond='Symptoms'
