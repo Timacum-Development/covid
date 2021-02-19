@@ -3,10 +3,10 @@ import {
 	FooterWrap,
 	Contact,
 	Question,
-	Email,
 	FooterInfo,
 	SocialWrap,
-	LinkWrap
+	LinkWrap,
+	FormWrap
 } from './style';
 
 // Assets
@@ -30,20 +30,12 @@ const Footer = () => {
 			<div className='container'>
 				<Contact>
 					<Question>Have Question in mind? Let us help you</Question>
-					<Email>
-						snmonydemo@gmail.com
-						<CallToAction
-							red
-							text='Send'
-							styleRed={{
-								position: 'absolute',
-								right: '17px',
-								top: '50%',
-								transform: 'translateY(-50%)',
-								padding: '26px 80px'
-							}}
-						/>
-					</Email>
+					<FormWrap>
+						<form>
+							<input type='text'></input>
+							<input type='submit' value='Send' className='submit' />
+						</form>
+					</FormWrap>
 				</Contact>
 				<FooterInfo>
 					<Logo text='Covid-19' />

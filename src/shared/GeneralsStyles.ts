@@ -119,7 +119,7 @@ export default createGlobalStyle`
 	h5 {
 		font-size: 2rem;
 		color: ${color.red};
-		line-height: 122%;
+		line-height: 72px;;
 	}
 
 	h6 {
@@ -360,5 +360,42 @@ export default createGlobalStyle`
 		}
 	}
 
+	input {
+		width: 100%;
+		padding: 44px 0 43px 41px;
+		font-size: 1.375rem;
+		position: relative;
+		outline: none;
+		border: none;
+		color: ${color.darkGrey};
+		border-radius: 57px;
+		text-align: left;
+		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+	}
+	
+	.submit {
+		padding: 26px 80px 26px 81px;
+		border-radius: 65px;
+		background-color: ${color.darkerRed};
+		color: ${color.white};
+		text-transform: capitalize;
+		font-size: 1.375rem;
+		font-weight: 600;
+		line-height: 26px;
+		text-align: center;
+		transition: 0.25s ease-in-out;
+		border: 1px solid transparent;
+		max-width: 209px;
+		position: absolute;
+		right: 17px;
+		top: 18px;
+		cursor: pointer;
 
+
+		&:hover {
+			background-color: ${color.white};
+			color: ${color.darkerRed};
+			border: 1px solid ${color.darkerRed};
+		}
+	}
 `;

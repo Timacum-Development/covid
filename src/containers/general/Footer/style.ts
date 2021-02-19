@@ -25,17 +25,6 @@ export const Question = styled.h2`
 	text-align: center;
 `;
 
-export const Email = styled.a`
-	width: 100%;
-	padding: 44px 0 44px 41px;
-	background-color: ${color.white};
-	color: ${color.darkGrey};
-	border-radius: 57px;
-	text-align: left;
-	position: relative;
-	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
-`;
-
 export const FooterInfo = styled.div`
 	display: flex;
 	justify-content: space-between;
@@ -51,4 +40,9 @@ export const SocialWrap = styled.div`
 
 export const LinkWrap = styled.div`
 	display: flex;
+`;
+
+export const FormWrap = styled.div`
+	width: 100%;
+	position: relative;
 `;

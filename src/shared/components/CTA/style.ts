@@ -27,6 +27,7 @@ export const RedCta = styled.a`
 	line-height: 29px;
 	transition: 0.25s ease-in-out;
 	border: 1px solid transparent;
+	font-size: 1.5rem;
 
 	&:hover {
 		background-color: ${color.white};
@@ -36,12 +37,14 @@ export const RedCta = styled.a`
 `;
 
 export const LightRed = styled.a`
-	padding: 24px 57px 28px 66px;
+	padding: 21px 49px 23px 51px;
 	border-radius: 65px;
 	background-color: rgba(250, 86, 82, 0.15);
 	color: ${color.red};
 	text-transform: capitalize;
-	font-weight: 500;
+	font-size: 1.1875rem;
+	font-weight: 600;
+	line-height: 24px;
 	transition: 0.25s ease-in-out;
 
 	&:hover {
