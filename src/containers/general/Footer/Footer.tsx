@@ -19,7 +19,6 @@ import Corona2 from '../../../assets/covid-footer-larger.png';
 
 // Components
 import Logo from '../../../shared/components/Logo';
-import CallToAction from '../../../shared/components/CTA';
 import Social from '../../../shared/components/Social';
 import Link from '../../../shared/components/Link';
 import Virus from '../../../shared/components/Virus';
@@ -68,16 +67,16 @@ const Footer = () => {
 						</ul>
 					</LinkWrap>
 					<SocialWrap>
-						<a href='' className='social-icon'>
+						<a href='/' className='social-icon'>
 							<Social iconSocial={Icon1} />
 						</a>
-						<a href='' className='social-icon'>
+						<a href='/' className='social-icon'>
 							<Social iconSocial={Icon2} />
 						</a>
-						<a href='' className='social-icon'>
+						<a href='/' className='social-icon'>
 							<Social iconSocial={Icon3} />
 						</a>
-						<a href='' className='social-icon'>
+						<a href='/' className='social-icon'>
 							<Social iconSocial={Icon4} />
 						</a>
 					</SocialWrap>
