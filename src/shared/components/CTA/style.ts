@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { color } from '../../styles';
 
 export const OutlineCta = styled.a`
-	padding: 15px 45px;
+	padding: 15px 44px;
 	border-radius: 46px;
 	border: 2px solid ${color.darkerRed};
 	color: ${color.darkerRed};
