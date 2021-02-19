@@ -173,8 +173,8 @@ const Homepage = () => {
 								<path
 									d='M0.269531 2.74963H113.515C120.784 2.74963 127.662 6.04471 132.218 11.71L165.458 53.0476C170.173 58.9102 177.363 62.2231 184.883 61.9971L397.85 55.5965'
 									stroke='#FFB2B1'
-									stroke-width='5'
-									stroke-linejoin='round'
+									strokeWidth='5'
+									strokeLinejoin='round'
 								/>
 							</svg>
 						</LineWrap>
@@ -197,8 +197,8 @@ const Homepage = () => {
 								<path
 									d='M0.511475 77.0704H203.822C211.243 77.0704 218.246 73.6376 222.792 67.7721L265.528 12.6288C270.074 6.76335 277.077 3.33057 284.498 3.33057H441.721'
 									stroke='#FFB2B1'
-									stroke-width='5'
-									stroke-linejoin='round'
+									strokeWidth='5'
+									strokeLinejoin='round'
 								/>
 							</svg>
 						</LineWrap>
@@ -214,8 +214,8 @@ const Homepage = () => {
 								<path
 									d='M0.740479 164.834H179.033C188.666 164.834 197.365 159.075 201.127 150.207L257.54 17.2331C261.302 8.36547 270.002 2.60626 279.634 2.60626H486.809'
 									stroke='#FFB2B1'
-									stroke-width='5'
-									stroke-linejoin='round'
+									strokeWidth='5'
+									strokeLinejoin='round'
 								/>
 							</svg>
 						</LineWrap>
@@ -243,8 +243,8 @@ const Homepage = () => {
 								<path
 									d='M301.839 2.85931H175.559C169.442 2.85931 163.555 5.1953 159.102 9.38995L130.567 36.2711C126.114 40.4657 120.228 42.8017 114.11 42.8017H0.120361'
 									stroke='#FFB2B1'
-									stroke-width='5'
-									stroke-linejoin='round'
+									strokeWidth='5'
+									strokeLinejoin='round'
 								/>
 							</svg>
 						</LineWrap>
@@ -260,8 +260,8 @@ const Homepage = () => {
 								<path
 									d='M0.77002 3.04565H169.584C178.398 3.04565 186.503 7.87693 190.695 15.63L221.944 73.4192C226.136 81.1723 234.241 86.0035 243.055 86.0035H325.84'
 									stroke='#FFB2B1'
-									stroke-width='5'
-									stroke-linejoin='round'
+									strokeWidth='5'
+									strokeLinejoin='round'
 								/>
 							</svg>
 						</LineWrap>
@@ -284,8 +284,8 @@ const Homepage = () => {
 								<path
 									d='M0.737793 52.4006H91.8462C99.1244 52.4006 106.009 49.0979 110.565 43.4214L136.096 11.6054C140.651 5.92894 147.536 2.62622 154.814 2.62622H248.995'
 									stroke='#FFA6A6'
-									stroke-width='5'
-									stroke-linejoin='round'
+									strokeWidth='5'
+									strokeLinejoin='round'
 								/>
 							</svg>
 						</LineWrap>

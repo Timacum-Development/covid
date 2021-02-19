@@ -1,5 +1,4 @@
 import styled, { keyframes } from 'styled-components';
-import Social from '.';
 
 export const SocialAnimation = keyframes`
 	0% {
